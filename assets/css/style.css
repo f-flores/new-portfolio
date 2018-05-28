@@ -5,11 +5,32 @@
 
 body {
   background-image: url("../images/circles-light.png");
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-  margin: 0px 10px 0px 10px;
-  padding-top: 0px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
   /* default padding for columns */
+  /*   h1,h2,h3,h4,h5,h6 {
+    color: $brand-color;
+    font-family: $brand-font-header;
+    font-weight: bolder;
+  }
+  h2, h3 {
+    box-sizing: border-box;
+    width: 100%;
+    height: 7%;
+    padding: 0.5%; 
+    border-style: solid;
+    border-color: $brand-border-color;   
+    border-width: 0 0 2px 0;
+    margin-bottom: 10px;
+  }  
+  h2 {
+    font-size: 180%;
+  } */
   /* outline when hovering over an image that is intended to be a link */
+  /*   .content {
+    padding: 0;
+  } */
   /* "clearfix" hack to neatly align block elements */
   /* styles 960 main content box */
   /* styles left content box */
@@ -19,61 +40,105 @@ body {
   body [class*="col-"] {
     float: left;
     padding: 10px; }
-  body header {
-    background-color: #ffffff;
-    border-style: solid;
-    border-width: 0px 0px 2px 0px;
-    border-color: #cccccc;
-    padding: 0px;
-    margin-top: -21px;
-    margin-bottom: 0px !important;
-    height: 15%; }
-    body header h1 {
-      width: 100%;
-      font-family: Georgia, Times, "Times New Roman", serif;
-      font-size: 2em;
-      font-weight: bold;
-      float: left;
-      text-align: center;
-      color: white;
-      background-color: #4aaaa5;
-      /*     margin: 0px $px-dsk-h1-rm 0px 90px; */
-      margin-left: 0%;
-      padding: 8% 1% 3% 1% !important;
-      margin-bottom: 0px; }
-    body header nav a {
-      display: inline-block;
-      padding: 2% 5%;
-      background-color: #4aaaa5;
-      margin: 5% 3%;
-      color: white;
-      text-align: center;
-      text-decoration: none;
-      border-left: 1px solid #cccccc;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.3); }
-    body header nav a:first-child {
-      border-left: 0 none; }
-    body header nav a:hover {
-      color: blanchedalmond;
-      background-color: #1D5959;
-      text-shadow: 1px 1px white; }
-  body h1, body h2, body h3, body h4, body h5, body h6 {
-    color: #4aaaa5;
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-weight: bolder; }
-  body h2, body h3 {
-    box-sizing: border-box;
-    width: 100%;
-    height: 7%;
-    padding: 0.5%;
-    border-style: solid;
-    border-color: #cccccc;
-    border-width: 0 0 2px 0;
-    margin-bottom: 10px; }
+  body h1 {
+    font-family: "Arvo", sans-serif;
+    font-weight: normal;
+    font-size: 55px;
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding: 0; }
   body h2 {
-    font-size: 180%; }
+    font-family: "Arvo", sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0; }
   body h3 {
-    font-size: 140%; }
+    font-family: "Oswald", serif;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    margin: 5px 0;
+    padding: 0;
+    z-index: 1;
+    position: relative; }
+  body .center {
+    margin: 0 auto; }
+  body .content {
+    margin: 0 auto;
+    width: 960px; }
+  body .clear {
+    clear: both; }
+  body #header {
+    width: 100%;
+    background: linear-gradient(to bottom right, #111826, #31456b);
+    height: 80px;
+    position: fixed;
+    margin-top: 30px; }
+  body #nav {
+    width: 410px;
+    float: right;
+    margin-top: 20px; }
+  body #logo a {
+    color: white;
+    text-decoration: none;
+    float: left;
+    font-size: 30px;
+    margin-top: 20px;
+    color: white;
+    font-family: "Wellfleet", sans-serif;
+    font-weight: bold; }
+  body #nav ul {
+    list-style: none;
+    display: block;
+    margin: 0 auto;
+    list-style: none; }
+  body #nav li {
+    margin-top: 9px;
+    float: left;
+    padding-left: 21px; }
+    body #nav li a {
+      color: #fff;
+      opacity: 0.7;
+      font-size: 16px;
+      text-decoration: none;
+      font-family: "Wellfleet", sans-serif; }
+    body #nav li a:active {
+      color: #fff;
+      opacity: 1;
+      border-bottom: 2px solid #fff; }
+    body #nav li a:hover {
+      color: #fff;
+      opacity: 1; }
+  body #About, body #Portfolio {
+    width: 100%; }
+  body #About {
+    color: blanchedalmond;
+    height: 600px;
+    margin: 0;
+    padding: 200px 0 260px 0;
+    background-size: cover; }
+  body #Portfolio {
+    background-color: lightblue;
+    color: #333333;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 200px 0; }
+  body #Skills {
+    background-color: lightgoldenrodyellow;
+    color: black;
+    height: 600px;
+    padding: 170px 0 0 0;
+    background-size: cover; }
+  body #Contact {
+    background-color: lightpink;
+    color: #333333;
+    height: 300px;
+    padding: 200px 0; }
   body p {
     text-align: justify; }
   body ul {
@@ -85,16 +150,12 @@ body {
     content: "";
     clear: both;
     display: table-footer-group; }
-  body .content {
-    padding: 0; }
   body .clearfix::after {
     content: "";
     display: block;
     clear: both; }
   body .main-content {
     box-sizing: border-box;
-    /*  margin-left: 100px;
-  width: $px-dsk-content; */
     padding: 20px 0px 10px 10px;
     margin-left: 10px; }
     body .main-content p {
@@ -210,7 +271,6 @@ body {
       /* padding: 5px 10px; */
       color: gray;
       text-decoration: underline;
-      background-color: white;
       text-shadow: none;
       margin: 0px 10px 20px 15px;
       box-shadow: none;
@@ -377,3 +437,46 @@ body {
       width: 84.8% !important;
       height: 20% !important;
       top: 73% !important; } }
+
+/*     border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: $brand-border-color;
+    padding: 0px;
+    margin-top: -21px;
+    margin-bottom: 0px!important;
+    height: $brand-header-height;
+    h1 {
+      width: 100%;
+      font-family: $brand-font-header;
+      font-size: 2em;
+      font-weight: bold;
+      float: left;
+      text-align: center;
+      color: white;
+      background-color: $brand-color;
+// margin: 0px $px-dsk-h1-rm 0px 90px;
+// margin-left: 5%;
+      margin-left: 0%;
+      padding: 8% 1% 3% 1% !important;
+ //     padding: 31px 18px 31px 30px !important; 
+      margin-bottom: 0px;
+    } */
+/*     nav a {
+      display: inline-block;
+      padding: 2% 5%;
+      background-color: $brand-color;
+      margin: 5% 3%;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-left: 1px solid $brand-border-color;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.20), 0 1px 2px rgba(0,0,0,0.30); 
+    }
+    nav a:first-child {
+      border-left: 0 none;
+    }
+    nav a:hover {
+        color: blanchedalmond;
+        background-color: $brand-nav-color;
+        text-shadow: 1px 1px white;
+    } */

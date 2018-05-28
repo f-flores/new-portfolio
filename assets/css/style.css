@@ -1,0 +1,379 @@
+/* stylesheet file*/
+/* left margin */
+* {
+  box-sizing: border-box; }
+
+body {
+  background-image: url("../images/circles-light.png");
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin: 0px 10px 0px 10px;
+  padding-top: 0px;
+  /* default padding for columns */
+  /* outline when hovering over an image that is intended to be a link */
+  /* "clearfix" hack to neatly align block elements */
+  /* styles 960 main content box */
+  /* styles left content box */
+  /* Connect with me section */
+  /* attributes for portfolio project content box */
+  /* caption_text styles the "text over image" caption on top of each portfolio image */ }
+  body [class*="col-"] {
+    float: left;
+    padding: 10px; }
+  body header {
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: #cccccc;
+    padding: 0px;
+    margin-top: -21px;
+    margin-bottom: 0px !important;
+    height: 15%; }
+    body header h1 {
+      width: 100%;
+      font-family: Georgia, Times, "Times New Roman", serif;
+      font-size: 2em;
+      font-weight: bold;
+      float: left;
+      text-align: center;
+      color: white;
+      background-color: #4aaaa5;
+      /*     margin: 0px $px-dsk-h1-rm 0px 90px; */
+      margin-left: 0%;
+      padding: 8% 1% 3% 1% !important;
+      margin-bottom: 0px; }
+    body header nav a {
+      display: inline-block;
+      padding: 2% 5%;
+      background-color: #4aaaa5;
+      margin: 5% 3%;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-left: 1px solid #cccccc;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.3); }
+    body header nav a:first-child {
+      border-left: 0 none; }
+    body header nav a:hover {
+      color: blanchedalmond;
+      background-color: #1D5959;
+      text-shadow: 1px 1px white; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    color: #4aaaa5;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-weight: bolder; }
+  body h2, body h3 {
+    box-sizing: border-box;
+    width: 100%;
+    height: 7%;
+    padding: 0.5%;
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 0 0 2px 0;
+    margin-bottom: 10px; }
+  body h2 {
+    font-size: 180%; }
+  body h3 {
+    font-size: 140%; }
+  body p {
+    text-align: justify; }
+  body ul {
+    list-style-type: none;
+    padding-left: 1%; }
+  body a > img:hover {
+    outline: 2px solid #4aaaa5; }
+  body .row::after {
+    content: "";
+    clear: both;
+    display: table-footer-group; }
+  body .content {
+    padding: 0; }
+  body .clearfix::after {
+    content: "";
+    display: block;
+    clear: both; }
+  body .main-content {
+    box-sizing: border-box;
+    /*  margin-left: 100px;
+  width: $px-dsk-content; */
+    padding: 20px 0px 10px 10px;
+    margin-left: 10px; }
+    body .main-content p {
+      text-align: justify;
+      margin: 0px 15px 10px 15px;
+      line-height: 2.0; }
+  body .main-box {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #cccccc;
+    margin-bottom: 20px;
+    padding: 20px; }
+    body .main-box img {
+      float: left;
+      width: 90%;
+      height: 90%;
+      margin: 0% 5% 0% 2%; }
+  body .media-links {
+    background-color: #ffffff; }
+    body .media-links img {
+      float: left;
+      width: 25%;
+      height: 25%;
+      margin: 0% 2% 0% 0%; }
+  body .image-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 2px;
+    text-align: center;
+    width: 200;
+    height: 290; }
+  body .image-container .caption-text {
+    position: absolute;
+    z-index: 2;
+    margin-left: 2%;
+    text-align: center;
+    background-color: #4aaaa5;
+    width: 90%;
+    height: 20%;
+    /* !important; */
+    top: 75%;
+    /* !important; */
+    padding: 10px;
+    font-size: 120%;
+    /* font-size: 1.2em; */
+    color: white;
+    font-weight: 200; }
+  body .wrapper {
+    padding: 0; }
+  body .custom-footer {
+    background-color: #666666;
+    border-color: #4aaaa5;
+    border-style: solid;
+    color: white;
+    border-width: 10px 0px 0px 0px; }
+    body .custom-footer p {
+      text-align: center;
+      font-size: 80%;
+      line-height: 1;
+      padding: 25px;
+      margin: 0; }
+  body .contact-form ul {
+    margin-bottom: 20px; }
+  body .contact-form li {
+    margin-bottom: 10px; }
+  body label,
+  body input[type=text],
+  body input[type=email],
+  body textarea {
+    display: block;
+    width: 100%; }
+  body input[type=text],
+  body input[type=email],
+  body textarea {
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #ddd; }
+  body textarea {
+    height: 200px; }
+  body input[type=submit] {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background: #4aaaa5;
+    border: 0 none; }
+  body input[type=submit]:hover {
+    background-color: #1D5959;
+    text-shadow: 1px 1px #1AD7E5; }
+
+/* For mobile phones portrait: */
+[class*="col-"] {
+  width: 100%; }
+
+@media only screen and (min-width: 308px) and (max-width: 350px) {
+  .image-container .caption-text {
+    font-size: 80% !important; } }
+
+/* For cellphone screen portrait: */
+@media only screen and (max-width: 307px) {
+  body {
+    margin-top: 0px;
+    /* attributes for portfolio project content box */
+    /* caption_text styles the "text over image" caption on top of each portfolio image */ }
+    body header h1 {
+      margin-left: 5%;
+      padding: 8% 1% 3% 1% !important; }
+    body header nav a {
+      display: block;
+      /* padding: 5px 10px; */
+      color: gray;
+      text-decoration: underline;
+      background-color: white;
+      text-shadow: none;
+      margin: 0px 10px 20px 15px;
+      box-shadow: none;
+      border-left: none; }
+    body .image-container {
+      position: relative;
+      display: inline-block;
+      margin-left: 2px;
+      text-align: center; }
+    body .image-container .caption-text {
+      position: absolute;
+      z-index: 2;
+      /* left: 1%; */
+      margin: 0 1 auto;
+      margin-left: 2%;
+      text-align: center;
+      text-shadow: 1px 1px white;
+      background-color: transparent;
+      width: 86.8%;
+      height: 15%;
+      font-size: 70% !important;
+      color: black;
+      font-weight: 200;
+      width: 86.5% !important;
+      height: 20% !important;
+      top: 5% !important;
+      line-height: 1 !important; } }
+
+@media only screen and (max-width: 640px) {
+  /* column spacer for navigation bar */
+  .c-my-sm-2 {
+    width: 25%; } }
+
+/* For tablet: */
+@media only screen and (min-width: 641px) and (max-width: 979px) {
+  .c-my-tblt-1 {
+    width: 8.33%; }
+  .c-my-tblt-2 {
+    width: 16.66%; }
+  .c-my-tblt-3 {
+    width: 25%; }
+  .c-my-tblt-4 {
+    width: 33.33%; }
+  .c-my-tblt-5 {
+    width: 41.66%; }
+  .c-my-tblt-6 {
+    width: 50%; }
+  .c-my-tblt-7 {
+    width: 58.33%; }
+  .c-my-tblt-8 {
+    width: 66.66%; }
+  .c-my-tblt-9 {
+    width: 75%; }
+  .c-my-tblt-10 {
+    width: 83.33%; }
+  .c-my-tblt-11 {
+    width: 91.66%; }
+  .c-my-tblt-12 {
+    width: 100%; }
+  [class*="c-my-tblt-"] {
+    float: left;
+    padding: 10px; }
+  body {
+    margin-top: 0px;
+    /* styles left content box */
+    /* caption_text styles the "text over image" caption on top of each portfolio image */ }
+    body header {
+      margin-bottom: 20px; }
+      body header h1 {
+        margin-left: 5%;
+        padding: 3.25% 1% !important; }
+    body .main-box > img {
+      float: left;
+      width: 55%;
+      height: 55%;
+      margin: 0% 5% 1% 5%; }
+    body .media-links {
+      background-color: #ffffff; }
+      body .media-links img {
+        float: left;
+        width: 15%;
+        height: 15%;
+        margin: 0% 2% 0% 0%; }
+    body .image-container {
+      padding: 0;
+      margin: 1% 1% 1% 1%; }
+    body .row-portfl-lm {
+      margin-left: 5%; }
+    body figure {
+      font-size: 85%; }
+    body figure > a > img {
+      width: 100%;
+      height: 100%; }
+    body .image-container .caption-text {
+      width: 90% !important;
+      height: 20% !important;
+      top: 75% !important; } }
+
+@media only screen and (min-width: 980px) {
+  /* For desktop: */
+  .c-my-dsk-1 {
+    width: 8.33%; }
+  .c-my-dsk-2 {
+    width: 16.66%; }
+  .c-my-dsk-3 {
+    width: 25%; }
+  .c-my-dsk-4 {
+    width: 33.33%; }
+  .c-my-dsk-5 {
+    width: 41.66%; }
+  .c-my-dsk-6 {
+    width: 50%; }
+  .c-my-dsk-7 {
+    width: 58.33%; }
+  .c-my-dsk-8 {
+    width: 66.66%; }
+  .c-my-dsk-9 {
+    width: 75%; }
+  .c-my-dsk-10 {
+    width: 83.33%; }
+  .c-my-dsk-11 {
+    width: 91.66%; }
+  .c-my-dsk-12 {
+    width: 100%; }
+  [class*="c-my-dsk-"] {
+    float: left;
+    padding: 10px; }
+  body {
+    margin-top: 0;
+    /* caption_text styles the "text over image" caption on top of each portfolio image */ }
+    body header {
+      margin-bottom: 20px; }
+      body header h1 {
+        margin-left: 10%;
+        padding: 6% 1% 3% 1% !important; }
+      body header nav a {
+        display: inline-block;
+        padding: 3% 5%;
+        margin: 4% 3%; }
+    body .main-box > img {
+      float: left;
+      width: 55%;
+      height: 55%;
+      margin: 0% 5% 1% 5%; }
+    body .nav-dsk-lm {
+      margin-left: 30%; }
+    body .hdr-dsk-lm {
+      margin-left: 5%; }
+    body .main-dsk-lm {
+      margin-left: 10%; }
+    body .aside-lm {
+      margin-left: 10%; }
+    body .media-links {
+      background-color: #ffffff; }
+      body .media-links img {
+        float: left;
+        width: 30%;
+        height: 30%;
+        margin: 0% 2% 0% 0%; }
+    body figure > a > img {
+      width: 100%;
+      height: 100%; }
+    body .image-container .caption-text {
+      width: 84.8% !important;
+      height: 20% !important;
+      top: 73% !important; } }

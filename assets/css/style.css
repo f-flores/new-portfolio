@@ -4,11 +4,13 @@
   box-sizing: border-box; }
 
 body {
-  background-image: url("../images/circles-light.png");
+  /* Background source: https://www.toptal.com/designers/subtlepatterns/?s=wood */
+  background-image: url("../images/wood_pattern.png");
   margin: 0;
   padding: 0;
   width: 100%;
   /* default padding for columns */
+  /* navigation bar */
   /*   h1,h2,h3,h4,h5,h6 {
     color: $brand-color;
     font-family: $brand-font-header;
@@ -27,6 +29,10 @@ body {
   h2 {
     font-size: 180%;
   } */
+  /*   ul {
+    list-style-type: none;
+    padding-left: 1%;
+  } */
   /* outline when hovering over an image that is intended to be a link */
   /*   .content {
     padding: 0;
@@ -43,23 +49,23 @@ body {
   body h1 {
     font-family: "Arvo", sans-serif;
     font-weight: normal;
-    font-size: 55px;
+    font-size: 40px;
     text-align: center;
-    color: white;
+    color: #111826;
     margin: 0;
     padding: 0; }
   body h2 {
     font-family: "Arvo", sans-serif;
     font-weight: normal;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
-    color: #fff;
+    color: #111826;
     margin: 0;
     padding: 0; }
   body h3 {
     font-family: "Oswald", serif;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
     margin: 5px 0;
     padding: 0;
@@ -68,8 +74,7 @@ body {
   body .center {
     margin: 0 auto; }
   body .content {
-    margin: 0 auto;
-    width: 960px; }
+    margin: 0 auto; }
   body .clear {
     clear: both; }
   body #header {
@@ -77,49 +82,46 @@ body {
     background: linear-gradient(to bottom right, #111826, #31456b);
     height: 80px;
     position: fixed;
-    margin-top: 30px; }
-  body #nav {
-    width: 410px;
-    float: right;
     margin-top: 20px; }
+  body #nav {
+    float: left;
+    margin: 1% 0 0 5%; }
+    body #nav ul {
+      list-style: none;
+      display: block;
+      margin: 0 auto; }
+    body #nav li {
+      margin-top: 9px;
+      float: left;
+      padding-left: 20px; }
+      body #nav li a {
+        color: #fff;
+        text-decoration: none;
+        opacity: 0.6;
+        font-size: 16px;
+        font-family: "Wellfleet", sans-serif; }
+      body #nav li a.active {
+        color: #fff;
+        opacity: 1;
+        border-bottom: 2px solid #fff; }
+      body #nav li a:hover {
+        color: #fff;
+        opacity: 1; }
   body #logo a {
-    color: white;
     text-decoration: none;
     float: left;
-    font-size: 30px;
-    margin-top: 20px;
+    margin: 20px 0 0 20px;
+    font-size: 20px;
     color: white;
     font-family: "Wellfleet", sans-serif;
     font-weight: bold; }
-  body #nav ul {
-    list-style: none;
-    display: block;
-    margin: 0 auto;
-    list-style: none; }
-  body #nav li {
-    margin-top: 9px;
-    float: left;
-    padding-left: 21px; }
-    body #nav li a {
-      color: #fff;
-      opacity: 0.7;
-      font-size: 16px;
-      text-decoration: none;
-      font-family: "Wellfleet", sans-serif; }
-    body #nav li a:active {
-      color: #fff;
-      opacity: 1;
-      border-bottom: 2px solid #fff; }
-    body #nav li a:hover {
-      color: #fff;
-      opacity: 1; }
   body #About, body #Portfolio {
     width: 100%; }
   body #About {
     color: blanchedalmond;
     height: 600px;
     margin: 0;
-    padding: 200px 0 260px 0;
+    padding: 120px 0 130px 0;
     background-size: cover; }
   body #Portfolio {
     background-color: lightblue;
@@ -141,9 +143,6 @@ body {
     padding: 200px 0; }
   body p {
     text-align: justify; }
-  body ul {
-    list-style-type: none;
-    padding-left: 1%; }
   body a > img:hover {
     outline: 2px solid #4aaaa5; }
   body .row::after {
@@ -253,37 +252,81 @@ body {
 [class*="col-"] {
   width: 100%; }
 
-@media only screen and (min-width: 308px) and (max-width: 350px) {
+/* small portrait size */
+@media only screen and (min-width: 327px) {
+  h1 {
+    font-size: 55px; }
+  h2 {
+    font-size: 40px; }
+  h3 {
+    font-size: 16px; }
+  #logo a {
+    font-size: 30px; } }
+
+/* 'sm' media query */
+@media only screen and (min-width: 768px) {
+  body #nav {
+    float: left;
+    margin: 2% 0 0 8%; }
+    body #nav li {
+      padding-left: 30px; } }
+
+/* 'md' media query */
+@media only screen and (min-width: 992px) {
+  #nav {
+    float: left;
+    margin: 2% 0 0 15%; }
+    #nav li {
+      padding-left: 40px; } }
+
+/* 'lg' media query */
+@media only screen and (min-width: 1200px) {
+  #nav {
+    float: left;
+    margin: 2% 0 0 20%; }
+    #nav li {
+      padding-left: 60px; } }
+
+@media only screen and (min-width: 328px) and (max-width: 350px) {
   .image-container .caption-text {
     font-size: 80% !important; } }
 
 /* For cellphone screen portrait: */
-@media only screen and (max-width: 307px) {
+@media only screen and (max-width: 327px) {
   body {
     margin-top: 0px;
-    /* attributes for portfolio project content box */
-    /* caption_text styles the "text over image" caption on top of each portfolio image */ }
-    body header h1 {
-      margin-left: 5%;
-      padding: 8% 1% 3% 1% !important; }
-    body header nav a {
-      display: block;
-      /* padding: 5px 10px; */
-      color: gray;
-      text-decoration: underline;
-      text-shadow: none;
-      margin: 0px 10px 20px 15px;
-      box-shadow: none;
-      border-left: none; }
-    body .image-container {
+    /*     margin-top: 0px;
+    header {
+      h1 {
+        // margin-left: 5%;
+         margin-left: 5%;
+         padding: 8% 1% 3% 1% !important;
+       }
+      nav a {
+        display: block;
+        // padding: 5px 10px;
+        color: gray;
+        text-decoration: underline;
+        // background-color: white;
+        text-shadow: none;
+        margin: 0px 10px 20px 15px;
+        box-shadow: none;
+        border-left: none;
+      }
+    }
+    // attributes for portfolio project content box
+    .image-container {
       position: relative;
       display: inline-block;
       margin-left: 2px;
-      text-align: center; }
-    body .image-container .caption-text {
+      text-align: center;
+      // color: black;
+    }
+    // caption_text styles the "text over image" caption on top of each portfolio image
+    .image-container .caption-text {
       position: absolute;
       z-index: 2;
-      /* left: 1%; */
+      // left: 1%; 
       margin: 0 1 auto;
       margin-left: 2%;
       text-align: center;
@@ -297,12 +340,18 @@ body {
       width: 86.5% !important;
       height: 20% !important;
       top: 5% !important;
-      line-height: 1 !important; } }
+      line-height: 1 !important;
+    }
+  }
+ */ } }
 
 @media only screen and (max-width: 640px) {
   /* column spacer for navigation bar */
-  .c-my-sm-2 {
-    width: 25%; } }
+  /*     .c-my-sm-2 {
+      //  margin-right: 8%;
+        width: 25%;
+      }
+ */ }
 
 /* For tablet: */
 @media only screen and (min-width: 641px) and (max-width: 979px) {
@@ -335,39 +384,53 @@ body {
     padding: 10px; }
   body {
     margin-top: 0px;
-    /* styles left content box */
-    /* caption_text styles the "text over image" caption on top of each portfolio image */ }
-    body header {
-      margin-bottom: 20px; }
-      body header h1 {
+    /*     header {
+      margin-bottom: 20px;
+      h1 {
+       // margin-left: 5%;
         margin-left: 5%;
-        padding: 3.25% 1% !important; }
-    body .main-box > img {
+        padding: 3.25% 1% !important;
+      }
+    }
+     // styles left content box 
+    .main-box > img {
       float: left;
       width: 55%;
-      height: 55%;
-      margin: 0% 5% 1% 5%; }
-    body .media-links {
-      background-color: #ffffff; }
-      body .media-links img {
+      height: 55%; 
+      margin: 0% 5% 1% 5%; 
+    }
+    .media-links {
+      background-color: $brand-bg-color;
+      img {
         float: left;
         width: 15%;
         height: 15%;
-        margin: 0% 2% 0% 0%; }
-    body .image-container {
+        margin: 0% 2% 0% 0%;
+      }
+    }
+    .image-container {
       padding: 0;
-      margin: 1% 1% 1% 1%; }
-    body .row-portfl-lm {
-      margin-left: 5%; }
-    body figure {
-      font-size: 85%; }
-    body figure > a > img {
+      margin: 1% 1% 1% 1%;
+    }
+    .row-portfl-lm {
+      margin-left: 5%;
+    }
+    figure {
+      font-size: 85%;
+    }
+    figure > a > img { 
       width: 100%;
-      height: 100%; }
-    body .image-container .caption-text {
+      height: 100%;
+    }
+    // caption_text styles the "text over image" caption on top of each portfolio image
+    .image-container .caption-text {
       width: 90% !important;
       height: 20% !important;
-      top: 75% !important; } }
+      top: 75% !important;
+    }
+    
+    //
+ */ } }
 
 @media only screen and (min-width: 980px) {
   /* For desktop: */
@@ -400,43 +463,56 @@ body {
     padding: 10px; }
   body {
     margin-top: 0;
-    /* caption_text styles the "text over image" caption on top of each portfolio image */ }
-    body header {
-      margin-bottom: 20px; }
-      body header h1 {
+    /*     header {
+      margin-bottom: 20px;
+      h1 {
         margin-left: 10%;
-        padding: 6% 1% 3% 1% !important; }
-      body header nav a {
+        padding: 6% 1% 3% 1% !important;
+      }
+      nav a {
         display: inline-block;
         padding: 3% 5%;
-        margin: 4% 3%; }
-    body .main-box > img {
+        margin: 4% 3%;
+      }
+    }
+    .main-box > img {
       float: left;
       width: 55%;
-      height: 55%;
-      margin: 0% 5% 1% 5%; }
-    body .nav-dsk-lm {
-      margin-left: 30%; }
-    body .hdr-dsk-lm {
-      margin-left: 5%; }
-    body .main-dsk-lm {
-      margin-left: 10%; }
-    body .aside-lm {
-      margin-left: 10%; }
-    body .media-links {
-      background-color: #ffffff; }
-      body .media-links img {
+      height: 55%; 
+      margin: 0% 5% 1% 5%; 
+    }
+    .nav-dsk-lm {
+      margin-left: 30%;
+    }
+    .hdr-dsk-lm {
+      margin-left: 5%;
+    }
+    .main-dsk-lm {
+      margin-left: 10%;
+    }
+    .aside-lm {
+      margin-left: 10%;
+    }
+    .media-links {
+      background-color: $brand-bg-color;
+      img {
         float: left;
         width: 30%;
         height: 30%;
-        margin: 0% 2% 0% 0%; }
-    body figure > a > img {
+        margin: 0% 2% 0% 0%;
+      }
+    }
+    figure > a > img { 
       width: 100%;
-      height: 100%; }
-    body .image-container .caption-text {
+      height: 100%;
+    }
+    // caption_text styles the "text over image" caption on top of each portfolio image
+    .image-container .caption-text {
       width: 84.8% !important;
       height: 20% !important;
-      top: 73% !important; } }
+      top: 73% !important;
+    }
+ */ } }
 
 /*     border-style: solid;
     border-width: 0px 0px 2px 0px;
@@ -479,4 +555,6 @@ body {
         color: blanchedalmond;
         background-color: $brand-nav-color;
         text-shadow: 1px 1px white;
-    } */
+    } 
+  }
+*/

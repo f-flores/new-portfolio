@@ -12,6 +12,8 @@
   <!--   ============== -->
   <!--   Jquery Library -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!--     bootstrap compiled js -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   <!--   =============== -->
   <!--   Google Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
@@ -34,24 +36,36 @@
   <header id="header">
     <div class="content">
       <div id="logo">
-        <a href=""> Fabian Flores </a>
+        <a class="navbar-brand custom-brand" href="#">Fabian Flores</a>
       </div>
-      <nav id="nav">
-        <ul>
-          <li>
-            <a href="#About" class="active" title="Next Section">About</a>
-          </li>
-          <li>
-            <a href="#Portfolio" title="Next Section">Porfolio</a>
-          </li>
-          <li>
-            <a href="#Skills" title="Next Section">Skills</a>
-          </li>
-          <li>
-            <a href="#Contact" title="Next Section">Contact</a>
-          </li>
-          <!--        <li><a href="#slide5" title="Next Section">Slide 5</a></li> -->
-        </ul>
+<!--       <nav id="nav" class="navbar navbar-expand-md"> -->
+    <nav id="nav" class="navbar navbar-expand-md navbar-light">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav">
+          <ul>
+            <li>
+              <a href="#About" class="active" title="Next Section">About</a>
+            </li>
+            <li>
+              <a href="#Portfolio" title="Next Section">Porfolio</a>
+            </li>
+            <li>
+              <a href="#Skills" title="Next Section">Skills</a>
+            </li>
+            <li>
+              <a href="#Contact" title="Next Section">Contact</a>
+            </li>
+            <li>
+              <a href="https://docs.google.com/document/d/1Z2dUBMzzsccND6o0TGSlc7HfSTs2xnxgJ1Akm7GrJog" target="_blank">R&eacute;sum&eacute;</a>
+            </li>
+            <!--        <li><a href="#slide5" title="Next Section">Slide 5</a></li> -->
+          </ul>
+        </div>
+        </div>
       </nav>
     </div>
   </header>
@@ -63,10 +77,11 @@
       <div id="christmas_tree"> </div>
       <div id="snowflakes1"></div>
       <div id="snowflakes2"></div>
-      <h2>Fabian</h2>
-      <h1>Flores</h1>
+      <h1>About</h1>
+      <h2>Fabian Flores</h2>
       <div id="divider"> </div>
-      <h3>Full Stack Web Developer</h3>
+<!--       <h3 class="d-inline-flex p-2 bg-dark text-center justify-content-center">Full Stack Web Developer</h3> -->
+      <h3 class="p-2 bg-dark">Full Stack Web Developer</h3>
       <article class="c-my-tblt-12 c-my-dsk-5 main-box">
           <h4>About Me</h4>
             <img src="./assets/images/profile_pic.png" alt="Profile Picture Francisco Flores" />
@@ -277,7 +292,5 @@
       </div>
     </footer>
 
-<!--     bootstrap compiled js -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </body>
 </html>

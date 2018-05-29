@@ -4,9 +4,10 @@
   box-sizing: border-box; }
 
 html {
-  margin: 0% 0% 0% 0%; }
+  margin: 0% 1% 0% 1%; }
   html body {
     /* Background source: https://www.toptal.com/designers/subtlepatterns/?s=wood */
+    background-image: url("../images/wood_pattern.png");
     margin: 0;
     padding: 0;
     width: 100%;
@@ -27,7 +28,7 @@ html {
     /* attributes for portfolio project content box */
     /* caption_text styles the "text over image" caption on top of each portfolio image */ }
     html body h1 {
-      font-family: "Arvo:400,700,400italic,700italic", sans-serif;
+      font-family: "Arvo", sans-serif;
       font-weight: bold;
       font-size: 40px;
       text-align: center;
@@ -35,7 +36,7 @@ html {
       margin: 0;
       padding: 0; }
     html body h2 {
-      font-family: "Arvo:400,700,400italic,700italic", sans-serif;
+      font-family: "Arvo", sans-serif;
       font-weight: bold;
       font-size: 30px;
       text-align: center;
@@ -54,7 +55,7 @@ html {
     html body .center {
       margin: 0 auto; }
     html body .content {
-      margin: 0 0; }
+      margin: 0 auto; }
     html body .clear {
       clear: both; }
     html body .intro-text {
@@ -67,14 +68,14 @@ html {
       background: black;
       z-index: 10; }
     html body #header {
-      width: 100%;
+      width: 98%;
       background: linear-gradient(to bottom right, #111826, #31456b);
       height: 60px;
       position: fixed;
       margin-top: 0px; }
     html body #nav {
       float: left;
-      margin: 1% 0 0 5%; }
+      margin: 1% 0% 5% 0%; }
       html body #nav ul {
         list-style: none;
         display: block;
@@ -115,7 +116,6 @@ html {
       padding: 0 0 0 0;
       background-size: cover; }
     html body #About {
-      background-image: url("../images/wood_pattern.png");
       color: #111826;
       margin: 0;
       padding: 200px 0 130px 0;
@@ -266,7 +266,7 @@ html {
     margin-left: 10%; }
   body #nav {
     float: left;
-    margin: 2% 0 0 10%; }
+    margin: 1% 0 5% 0%; }
     body #nav li {
       padding-left: 30px; }
       body #nav li a {

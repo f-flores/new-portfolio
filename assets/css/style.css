@@ -58,10 +58,14 @@ html {
     html body .clear {
       clear: both; }
     html body .intro-text {
-      padding-top: 150px; }
+      position: absolute;
+      top: 15%;
+      left: 45%;
+      opacity: 0.9; }
     html body #particles-js {
       height: 90%;
-      background: black; }
+      background: black;
+      z-index: 10; }
     html body #header {
       width: 100%;
       background: linear-gradient(to bottom right, #111826, #31456b);

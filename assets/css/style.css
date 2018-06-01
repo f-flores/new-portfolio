@@ -4,13 +4,12 @@
   box-sizing: border-box; }
 
 html {
-  margin: 0% 1% 0% 1%; }
+  margin: 0% 0% 0% 0%; }
   html body {
     /* Background source: https://www.toptal.com/designers/subtlepatterns/?s=wood */
     background-image: url("../images/wood_pattern.png");
     margin: 0;
     padding: 0;
-    width: 100%;
     height: 100vh;
     /* navigation bar */
     /*   ul {
@@ -60,7 +59,7 @@ html {
       clear: both; }
     html body .intro-text {
       position: absolute;
-      top: 15%;
+      top: 35%;
       left: 45%;
       opacity: 0.9; }
     html body #particles-js {
@@ -68,7 +67,7 @@ html {
       background: black;
       z-index: 10; }
     html body #header {
-      width: 98%;
+      width: 100%;
       background: linear-gradient(to bottom right, #111826, #31456b);
       height: 60px;
       position: fixed;
@@ -112,6 +111,7 @@ html {
       width: 100%; }
     html body #Intro {
       color: black;
+      margin: 0;
       height: 900px;
       padding: 0 0 0 0;
       background-size: cover; }
@@ -123,10 +123,16 @@ html {
     html body #Portfolio {
       background-color: lightblue;
       color: #333333;
-      height: 1500px;
+      height: 4500px;
       margin: 0 auto;
       overflow: hidden;
-      padding: 120px 0; }
+      padding: 200px 0;
+      /*       .portfolio-container {
+        // position: absolute;
+        // top: 35%;
+        // left: 45%;
+        // opacity: 0.9;
+      } */ }
     html body #Skills {
       background-color: lightgoldenrodyellow;
       color: black;
@@ -136,8 +142,8 @@ html {
     html body #Contact {
       background-color: lightpink;
       color: #333333;
-      height: 300px;
-      padding: 200px 0; }
+      height: 800px;
+      padding: 220px 0; }
     html body figure > a > img {
       width: 60%;
       height: 80%; }
@@ -178,9 +184,9 @@ html {
         margin: 0% 5% 0% 2%; }
     html body .media-links img {
       float: left;
-      width: 25%;
-      height: 25%;
-      margin: 0% 0% 0% 8%; }
+      width: 20%;
+      height: 20%;
+      margin: 0% 0% 0% 6%; }
     html body .image-container {
       position: relative;
       display: inline-block;
@@ -191,19 +197,19 @@ html {
     html body .image-container .caption-text {
       position: absolute;
       z-index: 2;
-      margin-left: 15%;
+      margin-left: 21%;
       text-align: center;
       background-color: #4aaaa5;
-      width: 60%;
+      width: 50%;
       height: 20%;
       /* !important; */
       top: 55%;
       /* !important; */
       padding: 10px;
-      font-size: 120%;
+      font-size: 110%;
       /* font-size: 1.2em; */
       color: white;
-      font-weight: 200; }
+      font-weight: normal; }
     html body .wrapper {
       padding: 0; }
     html body .custom-footer {
@@ -227,7 +233,7 @@ html {
     html body input[type=email],
     html body textarea {
       display: block;
-      width: 100%; }
+      width: 50%; }
     html body input[type=text],
     html body input[type=email],
     html body textarea {

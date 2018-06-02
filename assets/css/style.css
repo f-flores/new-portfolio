@@ -71,7 +71,8 @@ html {
       background: linear-gradient(to bottom right, #111826, #31456b);
       height: 60px;
       position: fixed;
-      margin-top: 0px; }
+      margin-top: 0px;
+      z-index: 5; }
     html body #nav {
       float: left;
       margin: 1% 0% 5% 0%; }
@@ -123,7 +124,7 @@ html {
     html body #Portfolio {
       background-color: lightblue;
       color: #333333;
-      height: 4500px;
+      height: 6600px;
       margin: 0 auto;
       overflow: hidden;
       padding: 200px 0;
@@ -136,7 +137,7 @@ html {
     html body #Skills {
       background-color: lightgoldenrodyellow;
       color: black;
-      height: 600px;
+      height: 800px;
       padding: 170px 0 0 0;
       background-size: cover; }
     html body #Contact {
@@ -149,7 +150,8 @@ html {
       height: 80%; }
     html body p {
       text-align: justify;
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 95%; }
     html body a > img:hover {
       outline: 2px solid #4aaaa5; }
     html body .row::after {
@@ -176,12 +178,13 @@ html {
     border-style: solid;
     border-width: 2px 2px 2px 2px;
     border-color: $brand-border-color;
-    padding: 5px 20px; */ }
+    padding: 5px 20px; */
+      margin-left: 2%; }
       html body .main-box img {
         float: left;
-        width: 40%;
-        height: 40%;
-        margin: 0% 5% 0% 2%; }
+        width: 30%;
+        height: 30%;
+        margin: 0% 4% 0% 2%; }
     html body .media-links img {
       float: left;
       width: 20%;
@@ -190,7 +193,6 @@ html {
     html body .image-container {
       position: relative;
       display: inline-block;
-      margin-left: 2px;
       text-align: center;
       width: 200;
       height: 290; }
@@ -256,21 +258,26 @@ html {
 
 /* small portrait size */
 @media only screen and (min-width: 327px) {
-  h1 {
-    font-size: 55px; }
-  h2 {
-    font-size: 40px; }
-  h3 {
-    font-size: 25px;
-    text-align: center !important; }
-  #header {
-    height: 80px !important;
-    margin-top: 20px !important; }
-  #logo a {
-    font-size: 30px !important; } }
+  body {
+    /*     #Portfolio {
+      padding: 135px 0 130px 0 !important;
+      height: 4600px !important;
+    } */ }
+    body h1 {
+      font-size: 55px; }
+    body h2 {
+      font-size: 40px; }
+    body h3 {
+      font-size: 25px;
+      text-align: center !important; }
+    body #header {
+      height: 80px !important;
+      margin-top: 20px !important; }
+    body #logo a {
+      font-size: 30px !important; } }
 
 /* 'sm' media query */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   body .aside-lm {
     margin-left: 10%; }
   body #nav {
@@ -291,20 +298,36 @@ html {
     padding: 135px 0 130px 0 !important; } }
 
 /* 'md' media query */
-@media only screen and (min-width: 992px) {
-  #nav {
+@media only screen and (min-width: 768px) {
+  body #nav {
     float: left;
     margin: 2% 0 0 20%; }
-    #nav li {
-      padding-left: 40px; } }
+    body #nav li {
+      padding-left: 40px; }
+  body #Portfolio {
+    padding: 135px 0 130px 0 !important;
+    height: 1300px !important; }
+  body .image-container .caption-text {
+    font-size: 75% !important; } }
 
 /* 'lg' media query */
-@media only screen and (min-width: 1200px) {
-  #nav {
+@media only screen and (min-width: 992px) {
+  body #nav {
     float: left;
     margin: 2% 0 0 35%; }
-    #nav li {
+    body #nav li {
       padding-left: 60px; } }
+
+/* 'xl' media query */
+@media only screen and (min-width: 1200px) {
+  body #nav {
+    float: left;
+    margin: 2% 0 0 35%; }
+    body #nav li {
+      padding-left: 60px; }
+  body #Portfolio {
+    padding: 135px 0 130px 0 !important;
+    height: 1700px !important; } }
 
 /* @media only screen and (min-width: $px-tblt-low) and (max-width: 350px) {
   .image-container .caption-text {

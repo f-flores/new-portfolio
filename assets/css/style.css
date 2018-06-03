@@ -4,22 +4,15 @@
   box-sizing: border-box; }
 
 html {
-  margin: 0% 0% 0% 0%; }
+  margin: 0% 1% 0% 1%; }
   html body {
     /* Background source: https://www.toptal.com/designers/subtlepatterns/?s=wood */
-    background-image: url("../images/wood_pattern.png");
+    background: darkblue;
     margin: 0;
     padding: 0;
     height: 100vh;
     /* navigation bar */
-    /*   ul {
-      list-style-type: none;
-      padding-left: 1%;
-    } */
     /* outline when hovering over an image that is intended to be a link */
-    /*   .content {
-      padding: 0;
-    } */
     /* "clearfix" hack to neatly align block elements */
     /* styles 960 main content box */
     /* styles left content box */
@@ -39,7 +32,6 @@ html {
       font-weight: bold;
       font-size: 30px;
       text-align: center;
-      color: #111826;
       margin: 0;
       padding: 0; }
     html body h3 {
@@ -64,6 +56,11 @@ html {
       opacity: 0.9; }
     html body .custom-hcenter {
       text-align: center !important; }
+    html body .custom-label {
+      background: gray !important;
+      text-align: center !important;
+      height: 35px !important;
+      font-weight: bold !important; }
     html body #particles-js {
       height: 90%;
       background: black;
@@ -119,14 +116,15 @@ html {
       padding: 0 0 0 0;
       background-size: cover; }
     html body #About {
+      background: url("../images/wood_pattern.png") 406px 634px repeat !important;
       color: #111826;
       margin: 0;
       padding: 200px 0 130px 0;
       background-size: cover; }
     html body #Portfolio {
-      /* Background source: https://www.toptal.com/designers/subtlepatterns/?s=congruent */
-      background-image: url("../images/congruent_pentagon.png");
-      color: #333333;
+      background: url("../images/TexturesCom_LeavesDead0019_1_seamless_S.jpg") 1024px 1024px repeat !important;
+      color: white;
+      text-shadow: 1px 1px black;
       height: 6600px;
       margin: 0 auto;
       overflow: hidden;
@@ -138,14 +136,15 @@ html {
         // opacity: 0.9;
       } */ }
     html body #Skills {
-      background: url("../images/cardboard.png") 50% 0 no-repeat fixed;
+      background: url("../images/TexturesCom_MarbleBase0040_1_seamless_S.png") 512px 512px repeat !important;
       color: black;
       height: 2100px;
-      padding: 170px 0 0 0;
+      padding: 250px 0 0 0;
       background-size: cover; }
     html body #Contact {
-      background-color: lightpink;
-      color: #333333;
+      background: url("../images/TexturesCom_LandscapeVarious0097_S.jpg") 1024px 882px repeat !important;
+      color: white;
+      text-shadow: 1px 1px goldenrod;
       height: 800px;
       padding: 220px 0; }
     html body figure > a > img {
@@ -212,7 +211,6 @@ html {
       /* !important; */
       padding: 10px;
       font-size: 110%;
-      /* font-size: 1.2em; */
       color: white;
       font-weight: normal; }
     html body .wrapper {
@@ -261,23 +259,18 @@ html {
 
 /* small portrait size */
 @media only screen and (min-width: 327px) {
-  body {
-    /*     #Portfolio {
-      padding: 135px 0 130px 0 !important;
-      height: 4600px !important;
-    } */ }
-    body h1 {
-      font-size: 55px; }
-    body h2 {
-      font-size: 40px; }
-    body h3 {
-      font-size: 25px;
-      text-align: center !important; }
-    body #header {
-      height: 80px !important;
-      margin-top: 20px !important; }
-    body #logo a {
-      font-size: 30px !important; } }
+  body h1 {
+    font-size: 55px; }
+  body h2 {
+    font-size: 40px; }
+  body h3 {
+    font-size: 25px;
+    text-align: center !important; }
+  body #header {
+    height: 80px !important;
+    margin-top: 20px !important; }
+  body #logo a {
+    font-size: 30px !important; } }
 
 /* 'sm' media query */
 @media only screen and (min-width: 576px) {
@@ -300,7 +293,11 @@ html {
   body #About {
     padding: 135px 0 130px 0 !important; }
   body #Skills {
-    height: 900px !important; } }
+    padding: 170px 0 0 0 !important;
+    height: 900px !important; }
+  body #Contact {
+    height: 800px !important;
+    padding: 120px 0 !important; } }
 
 /* 'md' media query */
 @media only screen and (min-width: 768px) {
@@ -339,215 +336,3 @@ html {
     font-size: 80% !important;
   }
 } */
-/* For cellphone screen portrait: */
-@media only screen and (max-width: 327px) {
-  body {
-    margin-top: 0px;
-    /*     margin-top: 0px;
-    header {
-      h1 {
-        // margin-left: 5%;
-         margin-left: 5%;
-         padding: 8% 1% 3% 1% !important;
-       }
-      nav a {
-        display: block;
-        // padding: 5px 10px;
-        color: gray;
-        text-decoration: underline;
-        // background-color: white;
-        text-shadow: none;
-        margin: 0px 10px 20px 15px;
-        box-shadow: none;
-        border-left: none;
-      }
-    }
-    // attributes for portfolio project content box
-    .image-container {
-      position: relative;
-      display: inline-block;
-      margin-left: 2px;
-      text-align: center;
-      // color: black;
-    }
-    // caption_text styles the "text over image" caption on top of each portfolio image
-    .image-container .caption-text {
-      position: absolute;
-      z-index: 2;
-      // left: 1%; 
-      margin: 0 1 auto;
-      margin-left: 2%;
-      text-align: center;
-      text-shadow: 1px 1px white;
-      background-color: transparent;
-      width: 86.8%;
-      height: 15%;
-      font-size: 70% !important;
-      color: black;
-      font-weight: 200;
-      width: 86.5% !important;
-      height: 20% !important;
-      top: 5% !important;
-      line-height: 1 !important;
-    }
-  }
- */ } }
-
-@media only screen and (max-width: 640px) {
-  /* column spacer for navigation bar */
-  /*     .c-my-sm-2 {
-      //  margin-right: 8%;
-        width: 25%;
-      }
- */ }
-
-/* For tablet: */
-@media only screen and (min-width: 641px) and (max-width: 979px) {
-  body {
-    margin-top: 0px;
-    /*     header {
-      margin-bottom: 20px;
-      h1 {
-       // margin-left: 5%;
-        margin-left: 5%;
-        padding: 3.25% 1% !important;
-      }
-    }
-     // styles left content box 
-    .main-box > img {
-      float: left;
-      width: 55%;
-      height: 55%; 
-      margin: 0% 5% 1% 5%; 
-    }
-    .media-links {
-      background-color: $brand-bg-color;
-      img {
-        float: left;
-        width: 15%;
-        height: 15%;
-        margin: 0% 2% 0% 0%;
-      }
-    }
-    .image-container {
-      padding: 0;
-      margin: 1% 1% 1% 1%;
-    }
-    .row-portfl-lm {
-      margin-left: 5%;
-    }
-    figure {
-      font-size: 85%;
-    }
-    figure > a > img { 
-      width: 100%;
-      height: 100%;
-    }
-    // caption_text styles the "text over image" caption on top of each portfolio image
-    .image-container .caption-text {
-      width: 90% !important;
-      height: 20% !important;
-      top: 75% !important;
-    }
-    
-    //
- */ } }
-
-@media only screen and (min-width: 980px) {
-  body {
-    margin-top: 0;
-    /*     header {
-      margin-bottom: 20px;
-      h1 {
-        margin-left: 10%;
-        padding: 6% 1% 3% 1% !important;
-      }
-      nav a {
-        display: inline-block;
-        padding: 3% 5%;
-        margin: 4% 3%;
-      }
-    }
-    .main-box > img {
-      float: left;
-      width: 55%;
-      height: 55%; 
-      margin: 0% 5% 1% 5%; 
-    }
-    .nav-dsk-lm {
-      margin-left: 30%;
-    }
-    .hdr-dsk-lm {
-      margin-left: 5%;
-    }
-    .main-dsk-lm {
-      margin-left: 10%;
-    }
-    .aside-lm {
-      margin-left: 10%;
-    }
-    .media-links {
-      background-color: $brand-bg-color;
-      img {
-        float: left;
-        width: 30%;
-        height: 30%;
-        margin: 0% 2% 0% 0%;
-      }
-    }
-    figure > a > img { 
-      width: 100%;
-      height: 100%;
-    }
-    // caption_text styles the "text over image" caption on top of each portfolio image
-    .image-container .caption-text {
-      width: 84.8% !important;
-      height: 20% !important;
-      top: 73% !important;
-    }
- */ } }
-
-/*     border-style: solid;
-    border-width: 0px 0px 2px 0px;
-    border-color: $brand-border-color;
-    padding: 0px;
-    margin-top: -21px;
-    margin-bottom: 0px!important;
-    height: $brand-header-height;
-    h1 {
-      width: 100%;
-      font-family: $brand-font-header;
-      font-size: 2em;
-      font-weight: bold;
-      float: left;
-      text-align: center;
-      color: white;
-      background-color: $brand-color;
-// margin: 0px $px-dsk-h1-rm 0px 90px;
-// margin-left: 5%;
-      margin-left: 0%;
-      padding: 8% 1% 3% 1% !important;
- //     padding: 31px 18px 31px 30px !important; 
-      margin-bottom: 0px;
-    } */
-/*     nav a {
-      display: inline-block;
-      padding: 2% 5%;
-      background-color: $brand-color;
-      margin: 5% 3%;
-      color: white;
-      text-align: center;
-      text-decoration: none;
-      border-left: 1px solid $brand-border-color;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.20), 0 1px 2px rgba(0,0,0,0.30); 
-    }
-    nav a:first-child {
-      border-left: 0 none;
-    }
-    nav a:hover {
-        color: blanchedalmond;
-        background-color: $brand-nav-color;
-        text-shadow: 1px 1px white;
-    } 
-  }
-*/

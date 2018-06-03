@@ -319,9 +319,37 @@
           <li class="col-xs-12 col-sm-3"><img class="img-fluid" src="./assets/images/skills/if_html5_294678.png" alt="html5 logo"></li>
           <li class="col-xs-12 col-sm-3"><img class="img-fluid" src="./assets/images/skills/if_css3_294692.png" alt="css3 logo"></li>
           <li class="col-xs-12 col-sm-3"><img img class="img-fluid" src="./assets/images/skills/if_code-programming-javascript-software-develop-command-language_652581 (2).png" alt="javascript logo"></li>
-          <li class="col-xs-12 col-sm-3"><img class="img-fluid" src="./assets/images/skills/if_jquery_308442.png" alt="jquery logo"></li>
+          <aside class="col-xs-12 col-sm-3">
+            <div class="card custom-bg">
+              <div class="card-title">
+                <h4 class="text-center font-weight-bold">Connect With Me</h4>
+              </div>
+              <div class="media-links card-body">
+                <ul>
+                  <li>
+                    <a href="https://github.com/f-flores" target="_blank">
+                      <img alt="Github Logo" src="assets/images/github-128.png">
+                    </a>
+                  </li>
+            
+                  <li>
+                    <a href="https://www.linkedin.com/in/francisco-f-flores/" target="_blank">
+                      <img alt="LinkedIn Logo" src="assets/images/linkedin-128.png">
+                    </a>
+                  </li>
+            
+                  <li>
+                    <a href="https://stackoverflow.com/users/9150518/f-flores" target="_blank">
+                      <img alt="StackOverflow Logo" src="assets/images/stackoverflow-128.png">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </aside>
         </div>
       <div class="row">
+        <li class="col-xs-12 col-sm-3"><img class="img-fluid" src="./assets/images/skills/if_jquery_308442.png" alt="jquery logo"></li>
         <li class="col-xs-12 col-sm-3"><img class="img-fluid" src="./assets/images/skills/if_sass_308448.png" alt="sass logo"></li>
         <li class="col-xs-12 col-sm-3"><img class="img-fluid" src="./assets/images/skills/if_React.js_logo_1174949.png" alt="react logo"></li>
         <li class="col-xs-12 col-sm-3"><img class="img-fluid" src="./assets/images/skills/AJAX_logo_by_gengns.svg.png" alt="ajax logo"></li>
@@ -335,7 +363,7 @@
       <ul>
         <div class="row">
           <li class="col-xs-12 col-sm-3"><img class="img-fluid" src="./assets/images/skills/if_nodejs-new-pantone-black_1012818.png" alt="nodejs"></li>
-          <li class="col-xs-12 col-sm-3"><img class="img-fluid" src="./assets/images/skills/Expressjs.png" alt="express"></li>
+          <li class="col-xs-12 col-sm-3"><img class="img-fluid" src="./assets/images/skills/express.png" alt="express"></li>
           <li class="col-xs-12 col-sm-3"><img class="img-fluid" src="./assets/images/skills/if_mysql_1322469.png" alt="mysql"></li>
           <li class="col-xs-12 col-sm-3"><img class="img-fluid" src="./assets/images/skills/sequelize.png" alt="sequelize"></li>
         </div>
@@ -352,27 +380,64 @@
 <!--   Contact Section -->
   <section id="Contact">
     <div class="content">
-          <h2>Contact</h2>
-          <form class="contact-form">
-            <ul>
-              <li>
-                <label for="name">Name</label>
-                <input type="text" name="name" placeholder="John Smith" required="required">
-              </li>
-    
-              <li>
-                <label for="email">Email</label>
-                <input type="email" name="email" placeholder="example@gmail.com" required="required">
-              </li>
+      <h2 class="text-left">Contact</h2>
+      <div class="row">
+        <div class="col-9">
+          <div class="row">
+            <form class="col-12 contact-form">
+              <div class="form-row">
+                <label class="bg-info text-light col-2 custom-label" for="name">Name:</label>
+                <input type="text" class="col-6 form-control" id="contact-name" placeholder="Enter name" required="required">
+              </div>
+
+              <div class="form-row">
+                <label class="bg-info text-light col-2 custom-label" for="email">Email:</label>
+                <input type="email" class="col-6 form-control" id="contact-email" placeholder="user@example.com" required="required">
+              </div>
+
+              <div class="form-row mb-2">
+                <label class="bg-info text-light col-2 custom-label" for="message">Message:</label>
+                <textarea class="col-6 form-control" name="message" id="contact-message" required="required" maxlength="600"></textarea>
+              </div>
+
+              <div class="row">
+                <input class="offset-2" type="submit" id="contact-submit"></input>
+              </div>
+            </form>
+          </div>
+        </div>
+
+          <aside class="col-xs-12 col-sm-3">
+              <div class="card custom-bg">
+                <div class="card-title">
+                  <h4 class="text-center font-weight-bold">Connect With Me</h4>
+                </div>
+                <div class="media-links card-body">
+                  <ul>
+                    <li>
+                      <a href="https://github.com/f-flores" target="_blank">
+                        <img alt="Github Logo" src="assets/images/github-128.png">
+                      </a>
+                    </li>
+              
+                    <li>
+                      <a href="https://www.linkedin.com/in/francisco-f-flores/" target="_blank">
+                        <img alt="LinkedIn Logo" src="assets/images/linkedin-128.png">
+                      </a>
+                    </li>
+              
+                    <li>
+                      <a href="https://stackoverflow.com/users/9150518/f-flores" target="_blank">
+                        <img alt="StackOverflow Logo" src="assets/images/stackoverflow-128.png">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
             
-              <li>
-                <label for="message">Message</label>
-                <textarea name="message" required="required"maxlength="600"></textarea>
-              </li>          
-            </ul>
-            
-            <input type="submit"></input>
-          </form>
+
+          </div>
 
     </div>
   </section>

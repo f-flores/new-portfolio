@@ -103,8 +103,10 @@ $(document).ready(function () {
     }],
     projCount = 0,
     rowCount = 0,
-    connectAside = $("<aside>");
+    connectAside = $("<aside>"),
+    divRow = $("<div>");
 
+    divRow.addClass("row row-portfl-lm");
     for (const elem of myProjects) {
       var index = 0,
           projFigure = $("<figure>"),
@@ -113,18 +115,6 @@ $(document).ready(function () {
           projCap = $("<caption>");
 
       projCount++;
-      console.log("projCount, rowCount: ", projCount, rowCount);
-      // start row on the very first element or on every third element from second row onward
-      if ((projCount === 1 && rowCount === 0 ) || (rowCount > 0 && (projCount % MAX_PROJS_PER_ROW) === 0 )) {
-        if (rowCount > 0) {
-          $(".portfolio-container").append(divRow);
-        }
-        divRow = $("<div>");
-        divRow.addClass("row row-portfl-lm");
-        // increment row only when rowCount is greater than 0 -- this takes into account
-        // the first row's special case in the condition below because of the 'Connect With Me' box
-        if (rowCount > 0 && projCount !== MAX_PROJS_PER_ROW) rowCount++;
-      }
     
       projImg.attr("src", IMG_DIR + elem.projImg).attr("alt", elem.projImgAlt);
       projLink.attr("href", elem.projUrl).attr("target","_blank").
@@ -135,45 +125,36 @@ $(document).ready(function () {
                  append(projCap);
       divRow.append(projFigure);
 
+      // console.log("projCount, rowCount, projName: ", projCount, rowCount, elem.captionText);
+
       // special case for first row, add 'Connect With Me' box as third element
       // and continue with next row
       if (projCount === (MAX_PROJS_PER_ROW - 1) && rowCount === 0 ) {
+        // console.log("special case first row");
         connectAside.addClass("col-xs-12 col-md-4 connect-with-me");
-        // divRow.append(projFigure) ???
         divRow.append(connectAside);
-        $(".portfolio-container").append(divRow);
+        $("#portfolio-container").append(divRow);
         rowCount++;
         divRow = $("<div>");
         divRow.addClass("row row-portfl-lm");
       }
+
+      // start on every third element from second row onward
+      if  (rowCount > 0 && (projCount % MAX_PROJS_PER_ROW) === 2) {
+        // increment row only when rowCount is greater than 0 -- this takes into account
+        // the first row's special case in the condition below because of the 'Connect With Me' box
+          rowCount++;
+          // console.log("new row: ", rowCount);
+          $("#portfolio-container").append(divRow);
+          divRow = $("<div>");
+          divRow.addClass("row row-portfl-lm");
+      }
     }
 
-
-/*     <div class="row row-portfl-lm">
-    <figure class="col-xs-12 col-md-4 image-container">
-      <a href="https://f-flores.github.io/bamazon" target="_blank">
-        <img src="./assets/images/bamazon.png" alt="Bamazon MySQL" />
-      </a>
-      <figcaption class="caption-text">Bamazon</figcaption>
-    </figure>
-
-    <figure class="col-xs-12 col-md-4 image-container">
-      <a href="https://f-flores.github.io/ConstructorHangman" target="_blank">
-        <img src="./assets/images/constructor-hangman.png" alt="Constructor Hangman" />
-      </a>
-      <figcaption class="caption-text">Constructor Hangman</figcaption>
-    </figure>
-
-    <figure class="col-xs-12 col-md-4 image-container">
-      <a href="https://f-flores.github.io/liri-node-app" target="_blank">
-        <img src="./assets/images/liri-terminal.png" alt="Liri Node App" />
-      </a>
-      <figcaption class="caption-text">Liri Node App</figcaption>
-    </figure>
-
-  </div> */
-
-
+    // append any remaining project elements
+    if (divRow) {
+      $("#portfolio-container").append(divRow);
+    }
 
   }
 
